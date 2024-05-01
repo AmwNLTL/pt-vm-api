@@ -65,5 +65,5 @@ python3 main.py 192.168.0.1 -u Administrator -p P@ssw0rd -s 00000000-0000-0000-0
 # Exports information about all Unix hosts like OS name and version 
 # plus installed packages and its version to example.csv limited by 10000 records in response
 
-python3 main.py mp10.ent.local -u Administrator -p P@ssw0rd -s 00000000-0000-0000-0000-000000000000 -f 'select(@UnixHost, UnixHost.OsName, UnixHost.OsVersion, UnixHost.Packages.Name, UnixHost.Packages.Version) | sort(@UnixHost ASC)' -a --csv sample.csv -l 10000
+python3 main.py mp10.ent.local -u Administrator -p P@ssw0rd -s 00000000-0000-0000-0000-000000000000 -f 'select(@UnixHost, UnixHost.OsName, UnixHost.OsVersion, UnixHost.Packages.Name, UnixHost.Packages.Version) | sort(@UnixHost ASC)' -a --csv example.csv -l 10000
 ```
