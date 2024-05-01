@@ -38,13 +38,13 @@ options:
   -h, --help            show this help message and exit
   -u USER, --user USER  PT MC User
   -p PASSWORD, --password PASSWORD
-                        PT MC User's Password
+                        PT MC User Password
   -s SECRET, --secret SECRET
                         ClientSecret parameter from /var/lib/deployer/role_instances/core*/params.yaml
   -f FILTER, --filter FILTER
                         PDQL Filter to execute
   -a ASSETS [ASSETS ...], --assets ASSETS [ASSETS ...]
-                        Assets' Filter to execute
+                        Assets Filter to execute
   -l LIMIT, --limit LIMIT
                         Number of Records to get as response
   --csv CSV             Filename to export response
@@ -59,7 +59,7 @@ Here's the basic usage:
 
 python3 main.py 192.168.0.1 -u Administrator -p P@ssw0rd -s 00000000-0000-0000-0000-000000000000 -f 'select(@Host, Host.@Vulners.CVEs.Item) | sort(@Host ASC)' -l 10000 -a 00000000-0000-0001-0000-000000000001 00000000-0000-0001-0000-000000000002 --csv example.csv
 ```
-... and one example: 
+... and one more example: 
 
 ```bash
 # Exports information about all Unix hosts like OS name and version 
