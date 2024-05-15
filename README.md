@@ -7,7 +7,7 @@ This is a Python command-line interface (CLI) application that simply exports re
 1. Clone this repository to your local machine:
 
 ```bash
-git clone https://github.com/yourusername/pt-vm-cli.git
+git clone https://github.com/AmwNLTL/pt-vm-api.git
 ```
 
 2. Navigate to the project directory:
